@@ -1,5 +1,4 @@
 from argon2 import PasswordHasher
-
 """ 
 
     Created a little program. That encrypts the password and also ads a salt to it.
