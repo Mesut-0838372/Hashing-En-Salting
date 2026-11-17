@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10%;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile">
+        <h1>Hi im Big Cat!</h1>
+        <p>You have successfully logged in.</p>
+
+        <img src="{{ url_for('static', filename='images/iqsphotography-cat-7954262.jpg') }}"
+             alt="Profile picture">
+
+<br>
+        <a href="https://pixabay.com/photos/cat-feline-mammal-calico-whiskers-7954262/">Cat image source</a>
+    </div>
+
+</body>
+</html>
