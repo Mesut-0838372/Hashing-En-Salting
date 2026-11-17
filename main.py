@@ -1,7 +1,13 @@
+
 from flask import Flask, render_template, request
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
 
+"""
+
+    Demo website, with username and password inputs.  
+    
+"""
 app = Flask(__name__)
 
 ph = PasswordHasher()
@@ -26,7 +32,7 @@ def login():
 
     try:
         ph.verify(password_hash, password_input)
-        return render_template("login.html")
+        return render_template("profile.html")
 
     except VerifyMismatchError:
         return "Invalid username or password", 401

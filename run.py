@@ -1,6 +1,7 @@
 from argon2 import PasswordHasher
 """ 
-
+    Testing Area: 
+    
     Created a little program. That encrypts the password and also ads a salt to it.
     Tested the salting with 2 encryptions that are the same, i get 2 different hashes.
     Salting is inside the hash creator.
